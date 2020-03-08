@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/boarderrec"
+        android:weightSum="5">
+
+    <TextView
+            android:text="용인서부경찰서 수지지구대"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/name"
+            android:gravity="center"
+            android:layout_weight="1.5"
+            android:textColor="#ff7070"
+            android:textSize="22sp"/>
+
+    <TextView
+            android:text="경기도 용인시 수지구 풍덕천1동 풍덕천로"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/address1"
+            android:gravity="bottom|center"
+            android:layout_weight="0.6"
+            android:textSize="15sp"/>
+
+    <TextView
+            android:text="190번길 18"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/address2"
+            android:gravity="top|center"
+            android:layout_weight="0.6"
+            android:textSize="15sp"/>
+
+    <TextView
+                    android:text="01035813256"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/phonenumber4"
+                    android:gravity="center"
+                    android:layout_weight="0.8"
+                    android:textSize="13sp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:weightSum="1.5"
+            android:orientation="vertical"
+            android:gravity="center">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.1"
+                android:orientation="horizontal"
+                android:gravity="center">
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/btn_call"
+                    android:scaleType="fitCenter"
+                    android:background="#fff"
+                    android:layout_weight="1"
+                    android:src="@drawable/phone_circle_red"/>
+            <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cancel_circle_red"
+                    android:id="@+id/btn_cancel"
+                    android:background="#fff"
+                    android:scaleType="fitCenter"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
